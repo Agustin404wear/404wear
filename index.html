@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>404wear</title>
   <link rel="icon" type="image/png" href="favicon.png" />
-  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     :root {
       --background: #0a0a0a;
@@ -13,12 +13,14 @@
       --text-secondary: #aaaaaa;
       --accent: #7f00ff;
     }
+
     body {
       margin: 0;
-      background: linear-gradient(145deg, #0a0a0a 0%, #111 100%);
+      background: linear-gradient(145deg, #0a0a0a, #111);
       font-family: 'Kanit', sans-serif;
       color: var(--text);
     }
+
     header {
       display: flex;
       justify-content: space-between;
@@ -26,6 +28,7 @@
       padding: 1rem 2rem 0.3rem;
       border-bottom: 1px solid #333;
     }
+
     .logo {
       color: var(--accent);
       font-size: 1.8rem;
@@ -34,16 +37,18 @@
       font-family: Arial, sans-serif;
       text-shadow: 0 0 5px #7f00ff, 0 0 10px #7f00ff;
     }
+
     .tagline {
       font-size: 0.9rem;
       color: var(--text-secondary);
-      margin-left: 2px;
     }
+
     .header-right {
       display: flex;
       align-items: center;
       gap: 1rem;
     }
+
     .search-bar {
       padding: 0.3rem 0.8rem;
       border-radius: 5px;
@@ -51,72 +56,64 @@
       background-color: #1a1a1a;
       color: white;
     }
+
     .cart-icon {
       font-size: 1.4rem;
       cursor: pointer;
-      color: var(--text);
     }
-    .section-title {
+
+    .hero {
       text-align: center;
-      font-size: 2rem;
-      font-weight: 600;
-      margin-top: 3rem;
-      color: var(--accent);
+      padding: 3rem 2rem 1rem;
     }
-    .products {
+
+    .hero h1 {
+      font-size: 2.4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+      font-size: 1rem;
+      color: var(--text-secondary);
+    }
+
+    .categories {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 2rem;
       padding: 2rem;
-      max-width: 1100px;
+      max-width: 1000px;
       margin: auto;
     }
-    .product {
-      background-color: #111;
-      padding: 1rem;
-      border-radius: 10px;
-      text-align: left;
+
+    .category {
+      background-color: #141414;
       border: 1px solid #2c2c2c;
-      display: flex;
-      flex-direction: column;
+      padding: 2rem;
+      border-radius: 12px;
+      text-align: center;
+      transition: transform 0.2s;
     }
-    .product img {
-      max-width: 100%;
-      border-radius: 8px;
+
+    .category:hover {
+      transform: scale(1.03);
+      border-color: var(--accent);
+    }
+
+    .category h2 {
+      font-size: 1.4rem;
       margin-bottom: 1rem;
     }
-    .product h3 {
-      margin: 0.5rem 0;
-      font-size: 1.3rem;
-    }
-    .product p {
-      font-size: 0.95rem;
-      margin: 0.3rem 0;
-      color: var(--text-secondary);
-    }
-    .product a {
-      margin-top: auto;
-      text-align: center;
-      display: inline-block;
-      background-color: var(--accent);
+
+    .category a {
+      text-decoration: none;
       padding: 0.5rem 1rem;
+      background-color: var(--accent);
       color: white;
       border-radius: 6px;
-      text-decoration: none;
-      transition: background 0.3s;
-    }
-    .product a:hover {
-      background-color: #9b2dff;
-    }
-    .about-discreet {
-      padding: 3rem 1rem 1rem;
-      max-width: 600px;
       font-size: 0.95rem;
-      color: var(--text-secondary);
-      text-align: center;
-      line-height: 1.8;
-      margin: auto;
     }
+
     footer {
       padding: 2rem;
       font-size: 0.9rem;
@@ -138,67 +135,26 @@
     </div>
   </header>
 
-  <h2 class="section-title">Remeras</h2>
-  <section class="products">
+  <section class="hero">
+    <h1>Explorá nuestras categorías</h1>
+    <p>Estilo, diseño y visión. Elegí lo que querés ver.</p>
+  </section>
 
-    <div class="product">
-      <img src="remera1.jpg" alt="Sent" />
-      <h3>Sent</h3>
-      <p>$14.000 ARS</p>
-      <p>Algodón cardado 24.1 (Jersey)</p>
-      <p>Remera Oversize S (74×54) – talle único</p>
-      <p>Costura reforzada en cuello</p>
-      <p>Talles: S (oversize), M, L, XL</p>
-      <p>Colores: Negro / Blanco</p>
-      <a href="https://wa.me/XXXXXXXXXXX?text=Hola! Quiero consultar por la remera Sent">Consultar</a>
+  <section class="categories">
+    <div class="category">
+      <h2>Remeras</h2>
+      <a href="remeras.html">Ver más</a>
     </div>
-    
-    <div class="product">
-      <img src="remera2.jpg" alt="Emily Rose" />
-      <h3>Emily Rose</h3>
-      <p>$14.000 ARS</p>
-      <p>Algodón cardado 24.1 (Jersey)</p>
-      <p>Remera Oversize S (74×54) – talle único</p>
-      <p>Costura reforzada en cuello</p>
-      <p>Talles: S (oversize), M, L, XL</p>
-      <p>Colores: Negro / Blanco</p>
-      <a href="https://wa.me/XXXXXXXXXXX?text=Hola! Quiero consultar por la remera Emily Rose">Consultar</a>
+    <div class="category">
+      <h2>Accesorios</h2>
+      <a href="#">Próximamente</a>
     </div>
-    
-    <div class="product">
-      <img src="remera3.jpg" alt="Antonio" />
-      <h3>Antonio</h3>
-      <p>$14.000 ARS</p>
-      <p>Algodón cardado 24.1 (Jersey)</p>
-      <p>Remera Oversize S (74×54) – talle único</p>
-      <p>Costura reforzada en cuello</p>
-      <p>Talles: S (oversize), M, L, XL</p>
-      <p>Colores: Negro / Blanco</p>
-      <a href="https://wa.me/XXXXXXXXXXX?text=Hola! Quiero consultar por la remera Antonio">Consultar</a>
+    <div class="category">
+      <h2>Otros artículos</h2>
+      <a href="#">Próximamente</a>
     </div>
-    
-    <div class="product">
-      <img src="remera4.jpg" alt="Skyline" />
-      <h3>Skyline</h3>
-      <p>$14.000 ARS</p>
-      <p>Algodón cardado 24.1 (Jersey)</p>
-      <p>Remera Oversize S (74×54) – talle único</p>
-      <p>Costura reforzada en cuello</p>
-      <p>Talles: S (oversize), M, L, XL</p>
-      <p>Colores: Negro / Blanco</p>
-      <a href="https://wa.me/XXXXXXXXXXX?text=Hola! Quiero consultar por la remera Skyline">Consultar</a>
-    </div>
-    
   </section>
-  <section class="about-discreet">
-    <p>
-      Hay caminos que no aparecen en ningún mapa.<br>
-      404wear es uno de ellos.<br>
-      Creemos en construir con calma, sin fórmulas ni atajos.<br>
-      No respondemos a lo predecible.<br>
-      Estamos donde elegimos estar.
-    </p>
-  </section>
+
   <footer>Contacto: 404wear@gmail.com</footer>
 </body>
 </html>
