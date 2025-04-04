@@ -34,6 +34,7 @@
       border-bottom: 1px solid #333;
       font-family: Arial, sans-serif;
       text-shadow: 0 0 5px #7f00ff, 0 0 10px #7f00ff, 0 0 20px #7f00ff;
+      text-align: center;
     }
 
     .hero {
@@ -112,6 +113,36 @@
 
     .floating-icons a img:hover {
       transform: scale(1.1);
+    }
+
+    @media (max-width: 600px) {
+      header {
+        font-size: 1.6rem;
+        padding: 1.5rem 1rem;
+      }
+
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+        padding: 0 1rem;
+      }
+
+      .floating-icons a img {
+        width: 42px;
+        height: 42px;
+      }
+
+      .products {
+        padding: 1rem;
+        gap: 1rem;
+      }
+
+      .product {
+        font-size: 0.9rem;
+      }
     }
   </style>
 </head>
