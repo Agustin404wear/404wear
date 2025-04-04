@@ -59,20 +59,6 @@
       font-weight: 400;
     }
 
-    .about {
-      padding: 4rem 2rem 2rem;
-      max-width: 700px;
-      text-align: center;
-      line-height: 1.8;
-    }
-
-    .about h2 {
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
-      font-weight: 600;
-      color: var(--accent);
-    }
-
     .products {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -99,6 +85,15 @@
     .product img {
       max-width: 100%;
       border-radius: 8px;
+    }
+
+    .about-discreet {
+      padding: 3rem 1rem 1rem;
+      max-width: 600px;
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      text-align: center;
+      line-height: 1.8;
     }
 
     footer {
@@ -138,12 +133,9 @@
         font-size: 1rem;
       }
 
-      .about h2 {
-        font-size: 1.5rem;
-      }
-
-      .about {
-        padding: 2rem 1rem;
+      .about-discreet {
+        font-size: 0.85rem;
+        padding: 2rem 1rem 1rem;
       }
 
       .floating-icons a img {
@@ -161,17 +153,6 @@
     <p>Estilo techno, elegante y under. Diseñado para destacar en la ciudad.</p>
   </section>
 
-  <section class="about">
-    <h2>Sobre 404wear</h2>
-    <p>
-      Hay caminos que no aparecen en ningún mapa.<br>
-      404wear es uno de ellos.<br>
-      Creemos en construir con calma, sin fórmulas ni atajos.<br>
-      No respondemos a lo predecible.<br>
-      Estamos donde elegimos estar.
-    </p>
-  </section>
-
   <section class="products">
     <div class="product">
       <img src="remera1.jpg" alt="Remera 1" />
@@ -183,15 +164,16 @@
     </div>
   </section>
 
-  <footer>Contacto: 404wear@gmail.com</footer>
+  <section class="about-discreet">
+    <p>
+      Hay caminos que no aparecen en ningún mapa.<br>
+      404wear es uno de ellos.<br>
+      Creemos en construir con calma, sin fórmulas ni atajos.<br>
+      No respondemos a lo predecible.<br>
+      Estamos donde elegimos estar.
+    </p>
+  </section>
 
-  <div class="floating-icons">
-    <a href="https://wa.me/XXXXXXXXXXX" target="_blank">
-      <img src="whatsapp_neon.png" alt="WhatsApp" />
-    </a>
-    <a href="https://instagram.com/404wear.ar" target="_blank">
-      <img src="instagram_neon.png" alt="Instagram" />
-    </a>
-  </div>
+  <footer>Contacto: 404wear@gmail.com</footer>
 </body>
 </html>
