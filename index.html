@@ -39,7 +39,7 @@
 
     .hero {
       text-align: center;
-      padding: 4rem 2rem;
+      padding: 4rem 2rem 2rem;
     }
 
     .hero h1 {
@@ -57,6 +57,20 @@
       margin: 0 auto;
       color: var(--text-secondary);
       font-weight: 400;
+    }
+
+    .about {
+      padding: 4rem 2rem 2rem;
+      max-width: 700px;
+      text-align: center;
+      line-height: 1.8;
+    }
+
+    .about h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+      color: var(--accent);
     }
 
     .products {
@@ -116,42 +130,48 @@
     }
 
     @media (max-width: 600px) {
-      header {
-        font-size: 1.6rem;
-        padding: 1.5rem 1rem;
-      }
-
       .hero h1 {
         font-size: 2.2rem;
       }
 
       .hero p {
         font-size: 1rem;
-        padding: 0 1rem;
+      }
+
+      .about h2 {
+        font-size: 1.5rem;
+      }
+
+      .about {
+        padding: 2rem 1rem;
       }
 
       .floating-icons a img {
         width: 42px;
         height: 42px;
       }
-
-      .products {
-        padding: 1rem;
-        gap: 1rem;
-      }
-
-      .product {
-        font-size: 0.9rem;
-      }
     }
   </style>
 </head>
 <body>
   <header>404wear</header>
+
   <section class="hero">
     <h1>Underwear with soul</h1>
     <p>Estilo techno, elegante y under. Diseñado para destacar en la ciudad.</p>
   </section>
+
+  <section class="about">
+    <h2>Sobre 404wear</h2>
+    <p>
+      Hay caminos que no aparecen en ningún mapa.<br>
+      404wear es uno de ellos.<br>
+      Creemos en construir con calma, sin fórmulas ni atajos.<br>
+      No respondemos a lo predecible.<br>
+      Estamos donde elegimos estar.
+    </p>
+  </section>
+
   <section class="products">
     <div class="product">
       <img src="remera1.jpg" alt="Remera 1" />
@@ -162,6 +182,7 @@
       <p>Remera Blanca Logo 404</p>
     </div>
   </section>
+
   <footer>Contacto: 404wear@gmail.com</footer>
 
   <div class="floating-icons">
