@@ -10,7 +10,7 @@
     :root {
       --background: #0a0a0a;
       --text: #ffffff;
-      --text-secondary: #888888;
+      --text-secondary: #aaaaaa;
       --accent: #7f00ff;
     }
 
@@ -33,7 +33,7 @@
       color: var(--accent);
       border-bottom: 1px solid #333;
       font-family: Arial, sans-serif;
-      text-shadow: 0 0 5px #7f00ff, 0 0 10px #7f00ff, 0 0 20px #7f00ff;
+      text-shadow: 0 0 5px #7f00ff, 0 0 10px #7f00ff;
       text-align: center;
     }
 
@@ -56,35 +56,59 @@
       max-width: 600px;
       margin: 0 auto;
       color: var(--text-secondary);
-      font-weight: 400;
     }
 
     .products {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 2rem;
       padding: 2rem;
+      max-width: 1100px;
       width: 100%;
-      max-width: 1000px;
     }
 
     .product {
       background-color: #111;
       padding: 1rem;
       border-radius: 10px;
-      text-align: center;
-      transition: transform 0.2s;
+      text-align: left;
       border: 1px solid #2c2c2c;
-    }
-
-    .product:hover {
-      transform: scale(1.05);
-      border-color: var(--accent);
+      display: flex;
+      flex-direction: column;
     }
 
     .product img {
       max-width: 100%;
       border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .product h3 {
+      margin: 0.5rem 0;
+      font-size: 1.3rem;
+    }
+
+    .product p {
+      font-size: 0.95rem;
+      margin: 0.3rem 0;
+      color: var(--text-secondary);
+    }
+
+    .product a {
+      margin-top: auto;
+      margin-top: 1rem;
+      text-align: center;
+      display: inline-block;
+      background-color: var(--accent);
+      padding: 0.5rem 1rem;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .product a:hover {
+      background-color: #9b2dff;
     }
 
     .about-discreet {
@@ -103,46 +127,6 @@
       border-top: 1px solid #333;
       text-align: center;
     }
-
-    .floating-icons {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      z-index: 1000;
-    }
-
-    .floating-icons a img {
-      width: 50px;
-      height: 50px;
-      transition: transform 0.2s;
-    }
-
-    .floating-icons a img:hover {
-      transform: scale(1.1);
-    }
-
-    @media (max-width: 600px) {
-      .hero h1 {
-        font-size: 2.2rem;
-      }
-
-      .hero p {
-        font-size: 1rem;
-      }
-
-      .about-discreet {
-        font-size: 0.85rem;
-        padding: 2rem 1rem 1rem;
-      }
-
-      .floating-icons a img {
-        width: 42px;
-        height: 42px;
-      }
-    }
   </style>
 </head>
 <body>
@@ -154,14 +138,55 @@
   </section>
 
   <section class="products">
+
     <div class="product">
-      <img src="remera1.jpg" alt="Remera 1" />
-      <p>Remera Oversize Negra</p>
+      <img src="remera1.jpg" alt="Sent" />
+      <h3>Sent</h3>
+      <p>$14.000 ARS</p>
+      <p>Algodón cardado 24.1 (Jersey)</p>
+      <p>Remera Oversize S (74×54) – talle único</p>
+      <p>Costura reforzada en cuello</p>
+      <p>Talles: S (oversize), M, L, XL</p>
+      <p>Colores: Negro / Blanco</p>
+      <a href="https://wa.me/XXXXXXXXXXX?text=Hola! Quiero consultar por la remera Sent">Consultar</a>
     </div>
+    
     <div class="product">
-      <img src="remera2.jpg" alt="Remera 2" />
-      <p>Remera Blanca Logo 404</p>
+      <img src="remera2.jpg" alt="Emily Rose" />
+      <h3>Emily Rose</h3>
+      <p>$14.000 ARS</p>
+      <p>Algodón cardado 24.1 (Jersey)</p>
+      <p>Remera Oversize S (74×54) – talle único</p>
+      <p>Costura reforzada en cuello</p>
+      <p>Talles: S (oversize), M, L, XL</p>
+      <p>Colores: Negro / Blanco</p>
+      <a href="https://wa.me/XXXXXXXXXXX?text=Hola! Quiero consultar por la remera Emily Rose">Consultar</a>
     </div>
+    
+    <div class="product">
+      <img src="remera3.jpg" alt="Antonio" />
+      <h3>Antonio</h3>
+      <p>$14.000 ARS</p>
+      <p>Algodón cardado 24.1 (Jersey)</p>
+      <p>Remera Oversize S (74×54) – talle único</p>
+      <p>Costura reforzada en cuello</p>
+      <p>Talles: S (oversize), M, L, XL</p>
+      <p>Colores: Negro / Blanco</p>
+      <a href="https://wa.me/XXXXXXXXXXX?text=Hola! Quiero consultar por la remera Antonio">Consultar</a>
+    </div>
+    
+    <div class="product">
+      <img src="remera4.jpg" alt="Skyline" />
+      <h3>Skyline</h3>
+      <p>$14.000 ARS</p>
+      <p>Algodón cardado 24.1 (Jersey)</p>
+      <p>Remera Oversize S (74×54) – talle único</p>
+      <p>Costura reforzada en cuello</p>
+      <p>Talles: S (oversize), M, L, XL</p>
+      <p>Colores: Negro / Blanco</p>
+      <a href="https://wa.me/XXXXXXXXXXX?text=Hola! Quiero consultar por la remera Skyline">Consultar</a>
+    </div>
+    
   </section>
 
   <section class="about-discreet">
