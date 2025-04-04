@@ -93,6 +93,26 @@
       border-top: 1px solid #333;
       text-align: center;
     }
+
+    .floating-icons {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      z-index: 1000;
+    }
+
+    .floating-icons a img {
+      width: 50px;
+      height: 50px;
+      transition: transform 0.2s;
+    }
+
+    .floating-icons a img:hover {
+      transform: scale(1.1);
+    }
   </style>
 </head>
 <body>
@@ -112,5 +132,14 @@
     </div>
   </section>
   <footer>Contacto: 404wear@gmail.com</footer>
+
+  <div class="floating-icons">
+    <a href="https://wa.me/XXXXXXXXXXX" target="_blank">
+      <img src="whatsapp_neon.png" alt="WhatsApp" />
+    </a>
+    <a href="https://instagram.com/404wear.ar" target="_blank">
+      <img src="instagram_neon.png" alt="Instagram" />
+    </a>
+  </div>
 </body>
 </html>
