@@ -16,33 +16,57 @@
 
     body {
       margin: 0;
-      background-color: var(--background);
+      background: linear-gradient(145deg, #0a0a0a 0%, #111 100%);
       font-family: 'Kanit', sans-serif;
       color: var(--text);
     }
 
     header {
-      padding: 1.5rem 2rem 0 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem 0.3rem;
+      border-bottom: 1px solid #333;
+    }
+
+    .logo {
+      color: var(--accent);
       font-size: 1.8rem;
       font-weight: bold;
-      letter-spacing: 2px;
       text-transform: uppercase;
-      color: var(--accent);
       font-family: Arial, sans-serif;
       text-shadow: 0 0 5px #7f00ff, 0 0 10px #7f00ff;
-      text-align: left;
+    }
+
+    .tagline {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      margin-left: 2px;
+    }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .search-bar {
+      padding: 0.3rem 0.8rem;
+      border-radius: 5px;
+      border: none;
+      background-color: #1a1a1a;
+      color: white;
+    }
+
+    .cart-icon {
+      font-size: 1.4rem;
+      cursor: pointer;
+      color: var(--text);
     }
 
     .hero {
-      padding: 0.5rem 2rem 1rem;
-      text-align: left;
-    }
-
-    .hero p {
-      font-size: 1.1rem;
-      max-width: 600px;
-      margin: 0 0 0 2rem;
-      color: var(--text-secondary);
+      text-align: center;
+      padding: 3rem 2rem 1rem;
     }
 
     .products {
@@ -114,14 +138,39 @@
       border-top: 1px solid #333;
       text-align: center;
     }
+
+    @media (max-width: 600px) {
+      .header-right {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 0.5rem;
+      }
+
+      .logo {
+        font-size: 1.5rem;
+      }
+
+      .tagline {
+        font-size: 0.8rem;
+      }
+
+      .search-bar {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
-  <header>404wear</header>
-
-  <section class="hero">
-    <p>No es solo lo que vendemos. Es cómo elegimos mostrarlo.</p>
-  </section>
+  <header>
+    <div>
+      <div class="logo">404wear</div>
+      <div class="tagline">No es solo lo que vendemos. Es cómo elegimos mostrarlo.</div>
+    </div>
+    <div class="header-right">
+      <input type="text" class="search-bar" placeholder="Buscar..." />
+      <div class="cart-icon">🛒</div>
+    </div>
+  </header>
 
   <section class="products">
     <div class="product">
