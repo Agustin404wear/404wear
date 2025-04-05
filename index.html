@@ -4,122 +4,84 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>404wear</title>
-  <link rel="icon" type="image/png" href="favicon.png" />
-  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;800&display=swap" rel="stylesheet" />
   <style>
-    :root {
-      --background: #0a0a0a;
-      --text: #ffffff;
-      --text-secondary: #aaaaaa;
-      --accent: #7f00ff;
-    }
-
     body {
       margin: 0;
-      background: linear-gradient(145deg, #0a0a0a, #111);
+      background-color: #0a0a0a;
+      color: white;
       font-family: 'Kanit', sans-serif;
-      color: var(--text);
     }
 
     header {
       display: flex;
       justify-content: space-between;
+      padding: 1rem 2rem;
       align-items: center;
-      padding: 1rem 2rem 0.3rem;
       border-bottom: 1px solid #333;
     }
 
     .logo {
-      color: var(--accent);
       font-size: 1.8rem;
       font-weight: bold;
-      text-transform: uppercase;
-      font-family: Arial, sans-serif;
-      text-shadow: 0 0 5px #7f00ff, 0 0 10px #7f00ff;
+      color: #7f00ff;
+      text-shadow: 0 0 8px #7f00ff;
     }
 
     .tagline {
       font-size: 0.9rem;
-      color: var(--text-secondary);
+      color: #aaa;
     }
 
-    .header-right {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
+    .hero-image {
+      width: 100%;
+      max-height: 80vh;
+      object-fit: cover;
+      display: block;
     }
 
-    .search-bar {
-      padding: 0.3rem 0.8rem;
-      border-radius: 5px;
-      border: none;
-      background-color: #1a1a1a;
-      color: white;
-    }
-
-    .cart-icon {
-      font-size: 1.4rem;
-      cursor: pointer;
-    }
-
-    .hero {
+    .poetic-text {
       text-align: center;
-      padding: 3rem 2rem 1rem;
-    }
-
-    .hero h1 {
-      font-size: 2.4rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .hero p {
       font-size: 1rem;
-      color: var(--text-secondary);
+      color: #aaa;
+      padding: 2rem 1rem 1rem;
     }
 
-    .categories {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 2rem;
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .category {
-      background-color: #141414;
-      border: 1px solid #2c2c2c;
-      padding: 2rem;
-      border-radius: 12px;
+    .section-title {
       text-align: center;
+      font-size: 2rem;
+      color: #7f00ff;
+      margin-top: 3rem;
+    }
+
+    .icons {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      z-index: 10;
+    }
+
+    .icons img {
+      width: 40px;
+      height: 40px;
+      filter: drop-shadow(0 0 4px #7f00ff);
       transition: transform 0.2s;
     }
 
-    .category:hover {
-      transform: scale(1.03);
-      border-color: var(--accent);
-    }
-
-    .category h2 {
-      font-size: 1.4rem;
-      margin-bottom: 1rem;
-    }
-
-    .category a {
-      text-decoration: none;
-      padding: 0.5rem 1rem;
-      background-color: var(--accent);
-      color: white;
-      border-radius: 6px;
-      font-size: 0.95rem;
+    .icons img:hover {
+      transform: scale(1.1);
     }
 
     footer {
       padding: 2rem;
       font-size: 0.9rem;
-      color: var(--text-secondary);
-      border-top: 1px solid #333;
+      color: #aaa;
       text-align: center;
+      border-top: 1px solid #333;
+      margin-top: 3rem;
     }
   </style>
 </head>
@@ -129,32 +91,23 @@
       <div class="logo">404wear</div>
       <div class="tagline">No es solo lo que vendemos. Es cómo elegimos mostrarlo.</div>
     </div>
-    <div class="header-right">
-      <input type="text" class="search-bar" placeholder="Buscar..." />
-      <div class="cart-icon">🛒</div>
-    </div>
   </header>
 
-  <section class="hero">
-    <h1>Explorá nuestras categorías</h1>
-    <p>Estilo, diseño y visión. Elegí lo que querés ver.</p>
-  </section>
+  <img src="404wear_visual_glow_white_full.png" class="hero-image" />
+  <div class="poetic-text">Lo que irradia no siempre se ve.</div>
 
-  <section class="categories">
-    <div class="category">
-      <h2>Remeras</h2>
-      <a href="remeras.html">Ver más</a>
-    </div>
-    <div class="category">
-      <h2>Accesorios</h2>
-      <a href="#">Próximamente</a>
-    </div>
-    <div class="category">
-      <h2>Otros artículos</h2>
-      <a href="#">Próximamente</a>
-    </div>
-  </section>
+  <h2 class="section-title">Remeras</h2>
+  <img src="404wear_visual_resplandor.png" class="hero-image" />
+  <div class="poetic-text">El borde también es territorio.</div>
+
+  <img src="A_digital_photograph_captures_a_dimly_lit,_red-tin.png" class="hero-image" />
+  <div class="poetic-text">No somos parte. Somos lo que queda.</div>
 
   <footer>Contacto: 404wear@gmail.com</footer>
+
+  <div class="icons">
+    <a href="#"><img src="whatsapp.png" alt="WhatsApp" /></a>
+    <a href="#"><img src="instagram.png" alt="Instagram" /></a>
+  </div>
 </body>
 </html>
