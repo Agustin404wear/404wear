@@ -4,198 +4,53 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>404wear</title>
-  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;800&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      background-color: #0a0a0a;
-      color: white;
-      font-family: 'Kanit', sans-serif;
-    }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      border-bottom: 1px solid #333;
-    }
-
-    .logo {
-      font-size: 1.8rem;
-      font-weight: bold;
-      color: #7f00ff;
-      text-shadow: 0 0 8px #7f00ff;
-    }
-
-    .tagline {
-      font-size: 0.9rem;
-      color: #aaa;
-    }
-
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-      padding: 2rem;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    .product {
-      background-color: #111;
-      padding: 1rem;
-      border-radius: 10px;
-      text-align: center;
-      border: 1px solid #2c2c2c;
-      transition: 0.3s;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .product:hover::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(255, 255, 255, 0.05);
-      mix-blend-mode: screen;
-    }
-
-    .product img {
-      width: 100%;
-      border-radius: 8px;
-      margin-bottom: 1rem;
-    }
-
-    .product h3 {
-      font-size: 1.3rem;
-      margin: 0.5rem 0;
-    }
-
-    .product p {
-      font-size: 0.9rem;
-      color: #aaa;
-    }
-
-    .product a {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.5rem 1rem;
-      background-color: #7f00ff;
-      color: white;
-      border-radius: 6px;
-      text-decoration: none;
-    }
-
-    .mini-visual {
-      position: fixed;
-      top: 30%;
-      left: 0;
-      width: 80px;
-      opacity: 0.15;
-      z-index: 1;
-    }
-
-    .mini-visual-right {
-      position: fixed;
-      bottom: 30%;
-      right: 0;
-      width: 80px;
-      opacity: 0.15;
-      z-index: 1;
-    }
-
-    .footer-visual {
-      width: 100%;
-      opacity: 0.2;
-      margin-top: 4rem;
-    }
-
-    .footer-phrase {
-      text-align: center;
-      color: #888;
-      font-size: 0.9rem;
-      margin: 1rem 0 4rem;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.85rem;
-      color: #666;
-      border-top: 1px solid #333;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="/favicon.ico" />
 </head>
 <body>
-
-  <header>
-    <div>
-      <div class="logo">404wear</div>
-      <div class="tagline">No es solo lo que vendemos. Es cómo elegimos mostrarlo.</div>
+  <header class="navbar">
+    <div class="logo">404wear</div>
+    <div class="search-cart">
+      <input type="text" placeholder="Buscar..." class="search" />
+      <div class="cart-icon">🛒</div>
     </div>
   </header>
 
-  <img src="404wear_visual_resplandor.png" class="mini-visual" alt="Visual decorativa izquierda">
-  <img src="404wear_visual_glow_white_full.png" class="mini-visual-right" alt="Visual decorativa derecha">
+  <main>
+    <section class="hero">
+      <h1 class="slogan">don't forget we all die</h1>
+    </section>
 
-  <section class="products">
-
-    <div class="product">
-      <img src="remera1.jpg" alt="Sent">
-      <h3>Sent</h3>
-      <p>$14.000 ARS</p>
-      <p>Algodón cardado 24.1 (Jersey)</p>
-      <p>Remera Oversize S (74×54) – talle único</p>
-      <p>Talles: S (oversize), M, L, XL</p>
-      <p>Colores: Negro / Blanco</p>
-      <a href="https://wa.me/XXXXXXXXXXX?text=Hola! Quiero consultar por la remera Sent">Consultar</a>
-    </div>
-    
-    <div class="product">
-      <img src="remera2.jpg" alt="Emily Rose">
-      <h3>Emily Rose</h3>
-      <p>$14.000 ARS</p>
-      <p>Algodón cardado 24.1 (Jersey)</p>
-      <p>Remera Oversize S (74×54) – talle único</p>
-      <p>Talles: S (oversize), M, L, XL</p>
-      <p>Colores: Negro / Blanco</p>
-      <a href="https://wa.me/XXXXXXXXXXX?text=Hola! Quiero consultar por la remera Emily Rose">Consultar</a>
-    </div>
-    
-    <div class="product">
-      <img src="remera3.jpg" alt="Antonio">
-      <h3>Antonio</h3>
-      <p>$14.000 ARS</p>
-      <p>Algodón cardado 24.1 (Jersey)</p>
-      <p>Remera Oversize S (74×54) – talle único</p>
-      <p>Talles: S (oversize), M, L, XL</p>
-      <p>Colores: Negro / Blanco</p>
-      <a href="https://wa.me/XXXXXXXXXXX?text=Hola! Quiero consultar por la remera Antonio">Consultar</a>
-    </div>
-    
-    <div class="product">
-      <img src="remera4.jpg" alt="Skyline">
-      <h3>Skyline</h3>
-      <p>$14.000 ARS</p>
-      <p>Algodón cardado 24.1 (Jersey)</p>
-      <p>Remera Oversize S (74×54) – talle único</p>
-      <p>Talles: S (oversize), M, L, XL</p>
-      <p>Colores: Negro / Blanco</p>
-      <a href="https://wa.me/XXXXXXXXXXX?text=Hola! Quiero consultar por la remera Skyline">Consultar</a>
-    </div>
-    
-  </section>
-
-  <img src="A_digital_photograph_captures_a_dimly_lit,_red-tin.png" class="footer-visual" alt="Visual de cierre" />
-  <div class="footer-phrase">Estamos donde elegimos estar.</div>
+    <section class="products">
+      <div class="product">
+        <img src="/img/sent.jpg" alt="Sent" />
+        <h2>Sent</h2>
+        <p>Oversize S único · Algodón cardado 24.1 · Jersey</p>
+        <button class="buy-button">Comprar</button>
+      </div>
+      <div class="product">
+        <img src="/img/emily-rose.jpg" alt="Emily Rose" />
+        <h2>Emily Rose</h2>
+        <p>Oversize S único · Costura en cuello · 100% algodón</p>
+        <button class="buy-button">Comprar</button>
+      </div>
+      <div class="product">
+        <img src="/img/antonio.jpg" alt="Antonio" />
+        <h2>Antonio</h2>
+        <p>Talles simulados: S, M, L · Tela suave y firme · Fit urbano</p>
+        <button class="buy-button">Comprar</button>
+      </div>
+      <div class="product">
+        <img src="/img/skyline.jpg" alt="Skyline" />
+        <h2>Skyline</h2>
+        <p>Estilo techno · Corte oversize · Inspiración nocturna</p>
+        <button class="buy-button">Comprar</button>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    Contacto: 404wear@gmail.com
+    <p>&copy; 2025 404wear - Todos los derechos reservados</p>
   </footer>
-
 </body>
 </html>

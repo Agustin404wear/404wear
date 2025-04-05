@@ -1,0 +1,128 @@
+/* Reset general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* Fondo techno sobrio */
+body {
+  background-color: #0e0e0e;
+  color: #f2f2f2;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #121212;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.search-cart {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.search {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #444;
+  background: transparent;
+  color: #f2f2f2;
+  border-radius: 4px;
+}
+
+.search::placeholder {
+  color: #888;
+}
+
+.cart-icon {
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+/* Hero section */
+.hero {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.slogan {
+  font-size: 1.2rem;
+  color: #777;
+  letter-spacing: 1px;
+}
+
+/* Products section */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.product {
+  background-color: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+.product img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.product h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.product p {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+/* Comprar button elegante */
+.buy-button {
+  padding: 0.6rem 1.2rem;
+  border: 1px solid #888;
+  background-color: transparent;
+  color: #f2f2f2;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.buy-button:hover {
+  background-color: #f2f2f2;
+  color: #0e0e0e;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.8rem;
+  color: #666;
+}
