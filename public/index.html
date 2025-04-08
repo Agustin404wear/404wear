@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>404wear</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <script src="scripts.js" defer></script>
+  <style>
+    .marquee-container {
+      width: 100%;
+      overflow: hidden;
+      margin: 0 auto;
+      background-color: rgba(255,255,255,0.03);
+      border-top: 0.5px solid #4e3d3d;
+      border-bottom: 0.5px solid #4e3d3d;
+      padding: 0.25rem 0;
+    }
+    .marquee-track {
+      display: inline-block;
+      white-space: nowrap;
+      animation: scrollText 30s linear infinite;
+      color: #d8c6ac;
+      font-size: 1.2rem;
+    }
+    @keyframes scrollText {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 style="text-align:center; color:#c9b17c;">404wear</h1>
+  </header>
+
+  <div class="marquee-container">
+    <div class="marquee-track">
+      ~ diseño ~ calidad ~ precio ~ diseño ~ calidad ~ precio ~ diseño ~ calidad ~ precio ~
+    </div>
+  </div>
+
+  <main>
+    <section class="productos">
+      <div class="producto"><h2>Remeras</h2><button onclick="agregarAlCarrito(1)">Ver más</button></div>
+      <div class="producto"><h2>Joggers</h2><button onclick="agregarAlCarrito(2)">Ver más</button></div>
+      <div class="producto"><h2>Accesorios</h2><button onclick="agregarAlCarrito(3)">Ver más</button></div>
+      <div class="producto"><h2>Buzos</h2><button onclick="agregarAlCarrito(4)">Ver más</button></div>
+    </section>
+    <section class="carrito">
+      <h3>Carrito</h3>
+      <ul id="carrito"></ul>
+      <button onclick="enviarPedido()">Confirmar pedido</button>
+    </section>
+  </main>
+</body>
+</html>
