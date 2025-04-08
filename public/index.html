@@ -9,23 +9,33 @@
   <style>
     body {
       margin: 0;
+      font-family: 'Georgia', serif;
       background-color: #1a0000;
       color: #f3e6d4;
-      font-family: 'Georgia', serif;
     }
-    nav {
-      background-color: rgba(26,0,0,0.95);
-      padding: 1rem;
-      text-align: center;
+    header, footer {
+      background-color: #1a0000;
       border-bottom: 1px solid #a18b5f;
+      text-align: center;
+      padding: 1rem 0;
     }
-    nav a {
-      color: #d8c6ac;
-      margin: 0 1rem;
+    footer {
+      border-top: 1px solid #a18b5f;
+      font-size: 0.9rem;
+    }
+    .nav {
+      background-color: #1a0000;
+      border-bottom: 1px solid #3a2d2d;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0.5rem 0;
+    }
+    .nav a {
       text-decoration: none;
-      font-weight: bold;
+      color: #d8c6ac;
     }
-    nav a:hover {
+    .nav a:hover {
       color: #c9b17c;
     }
     .marquee-container {
@@ -34,13 +44,12 @@
       background-color: rgba(255,255,255,0.03);
       border-top: 0.5px solid #4e3d3d;
       border-bottom: 0.5px solid #4e3d3d;
-      padding: 0.5rem 0;
-      margin: 0 auto;
+      padding: 0.25rem 0;
     }
     .marquee-track {
       display: inline-block;
       white-space: nowrap;
-      animation: scrollText 30s linear infinite;
+      animation: scrollText 35s linear infinite;
       color: #d8c6ac;
       font-size: 1.1rem;
     }
@@ -48,40 +57,69 @@
       0% { transform: translateX(0); }
       100% { transform: translateX(-50%); }
     }
-    footer {
-      background-color: #1a0000;
-      text-align: center;
-      color: #b9a88d;
+    .productos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      padding: 2rem;
+    }
+    .producto {
+      flex: 1 0 220px;
+      background-color: rgba(255,255,255,0.05);
+      border: 1px solid #a18b5f;
+      border-radius: 6px;
       padding: 1rem;
-      border-top: 1px solid #3a2d2d;
-      font-size: 0.9rem;
+      text-align: center;
+    }
+    .producto h2 {
+      color: #c9b17c;
+    }
+    button {
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: #c9b17c;
+      color: #1a0000;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #a18b5f;
+    }
+    .carrito {
+      text-align: center;
+      padding: 2rem;
     }
   </style>
 </head>
 <body>
-  <nav>
+  <header>
+    <h1 style="color:#c9b17c;">404wear</h1>
+  </header>
+
+  <nav class="nav">
     <a href="#">Inicio</a>
-    <a href="#">Remeras</a>
-    <a href="#">Joggers</a>
-    <a href="#">Accesorios</a>
-    <a href="#">Buzos</a>
+    <a href="#">Catálogo</a>
+    <a href="#">Sobre 404wear</a>
     <a href="#">Contacto</a>
   </nav>
 
   <div class="marquee-container">
     <div class="marquee-track">
-      ~ diseño ~ calidad ~ precio ~ diseño ~ calidad ~ precio ~ diseño ~ calidad ~ precio ~
+      ~ diseño ~ calidad ~ precio ~ diseño ~ calidad ~ precio ~ diseño ~ calidad ~ precio ~ diseño ~ calidad ~ precio ~
     </div>
   </div>
 
   <main>
-    <section class="productos" style="display:flex;flex-wrap:wrap;justify-content:center;padding:2rem;gap:1rem;">
+    <section class="productos">
       <div class="producto"><h2>Remeras</h2><button onclick="agregarAlCarrito(1)">Ver más</button></div>
       <div class="producto"><h2>Joggers</h2><button onclick="agregarAlCarrito(2)">Ver más</button></div>
       <div class="producto"><h2>Accesorios</h2><button onclick="agregarAlCarrito(3)">Ver más</button></div>
       <div class="producto"><h2>Buzos</h2><button onclick="agregarAlCarrito(4)">Ver más</button></div>
     </section>
-    <section class="carrito" style="text-align:center;padding:2rem;">
+
+    <section class="carrito">
       <h3>Carrito</h3>
       <ul id="carrito"></ul>
       <button onclick="enviarPedido()">Confirmar pedido</button>
@@ -89,7 +127,7 @@
   </main>
 
   <footer>
-    &copy; 2025 404wear. Todos los derechos reservados.
+    &copy; 2025 404wear. All rights reserved.
   </footer>
 </body>
 </html>
